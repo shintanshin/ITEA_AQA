@@ -1,10 +1,21 @@
 import java.util.Scanner;
-public class Main{
-    int Year = 2023;
-
-    public static int MYMETHOD(int a, int b) {
+public class Main {
+    public static int sumOfNumbers(int a, int b) {
         int c = a + b;
-        return c;}
+        System.out.println("Result:\n"+c);
+        return 0;
+    }
     public static void main(String[] args) {
-        MYMETHOD(num1, num2);}
+        Scanner a = new Scanner(System.in);
+        System.out.println("Enter num1:");
+
+        int num1 = a.nextInt();
+
+        Scanner b = new Scanner(System.in);
+        System.out.println("Enter num2:");
+
+        int num2 = b.nextInt();
+        sumOfNumbers(num1, num2);
+    }
+
 }
