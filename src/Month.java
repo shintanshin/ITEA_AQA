@@ -1,6 +1,6 @@
 public class Month {
-    public static void numOfDays(int month)  {
-        switch (month){
+    public static void numOfDays(int month) {
+        switch (month) {
             case 1:
             case 3:
             case 5:
@@ -23,6 +23,7 @@ public class Month {
                 System.out.println("Incorrect value");
         }
     }
+
     public static void main(String[] args) {
         numOfDays(2);
 
