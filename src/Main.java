@@ -1,9 +1,11 @@
 import java.util.Scanner;
+
 public class Main {
     public static void sumOfNumbers(int a, int b) {
         int c = a + b;
-        System.out.println("Result:\n"+c);
+        System.out.println("Result:\n" + c);
     }
+
     public static void main(String[] args) {
         Scanner a = new Scanner(System.in);
         System.out.println("Enter num1:");
