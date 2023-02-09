@@ -4,10 +4,7 @@ import Student.Student;
 
 public class StudentTest {
     public static int arithmeticMeanScore(int mAverGrade1, int eAverGrade1, int forLangAverGrade1) {
-        int a = mAverGrade1;
-        int b = eAverGrade1;
-        int c = forLangAverGrade1;
-        int arithmetic = (a + b + c) / 3;
+        int arithmetic = (forLangAverGrade1 + eAverGrade1 + mAverGrade1) / 3;
         return arithmetic;
     }
 

@@ -1,16 +1,16 @@
 package Employee;
 
 public class Employee {
-    private double salary = 759.35;
-    public String surname = "Johnson";
-    int id = 56;
+    private double salary;
+    public String surname;
+    int id;
 
     public void clientInfo() {
         System.out.println(surname);
     }
 
     public void info() {
-        System.out.println("Bank Accaunt id:" + id + "\nSalary:" + salary);
+        System.out.println("Bank Account id:" + id + "\nSalary:" + salary);
     }
 
     public void cash() {
@@ -21,8 +21,8 @@ public class Employee {
         this.surname = surname;
     }
 
-    Employee(int ID) {
-        this.id = ID;
+    Employee(int id) {
+        this.id = id;
     }
 
     public Employee() {
@@ -36,8 +36,8 @@ public class Employee {
         Employee salary = new Employee();
         Employee client = new Employee();
         Employee bankAc = new Employee();
-        Employee methods = new Employee();
-        methods.info();
+        Employee employee = new Employee();
+        employee.info();
 
     }
 }
