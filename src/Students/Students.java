@@ -6,10 +6,11 @@ public class Students {
     private static int grade;
 
 
-    public void setName(String name) {
+    public String setName(String name) {
         if (name.length() >= 3) {
             this.name = name;
         }
+        return name;
     }
 
     public static String getName() {
@@ -20,26 +21,25 @@ public class Students {
         return course;
     }
 
-    public void setCourse(int course) {
+    public int setCourse(int course) {
         if (course >= 1 && course <= 4) {
             this.course = course;
         }
-
+        return course;
     }
 
     public static int getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public int setGrade(int grade) {
         if (grade >= 1 && grade <= 10) {
             this.grade = grade;
         }
+        return  grade;
     }
 
     public static void showInfo() {
         System.out.println("Name: " + getName() + "\nCourse: " + getCourse() + "\nGrade: " + getGrade());
     }
-
-
 }
